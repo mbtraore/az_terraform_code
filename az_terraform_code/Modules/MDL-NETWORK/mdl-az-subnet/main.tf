@@ -2,7 +2,7 @@ data "azurerm_resource_group" "mdl_resource_group" {
   name =  var.var_resource_group.name
 }
 
-data "azurerm_virtual_network" "mdl_virtual_Network" {
+data "azurerm_virtual_network" "mdl_virtual_network" {
   name = var.var_virtual_network.name
   resource_group_name = data.azurerm_resource_group.mdl_resource_group.name
 }
